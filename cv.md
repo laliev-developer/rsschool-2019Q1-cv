@@ -9,6 +9,7 @@ ___
 #### Skills  
 
 + HTML
++ CSS
 + Javascript
 + Node JS
 ___

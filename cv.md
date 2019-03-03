@@ -48,7 +48,7 @@ Period
   ~ From 2016 to 2019
 
 Job Title
- ~ front end developer.
+ ~ Front end developer.
 
 Company:
  ~ I Software  

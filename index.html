@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Laliyeu Aleh | rsschool-2019Q1-cv</title>
+</head>
+<body>
+  <div class="container">
+    <h1><a href="https://laliev-developer.github.io/rsschool-2019Q1-cv/">rsschool-2019Q1-cv</a></h1>
+    <h3 id="laliyeu-aleh">Laliyeu Aleh</h3>
+    <hr>
+    <div>
+      <a href="https://www.linkedin.com/in/ollie-laliev/">Linked In</a><br>
+      <a href="https://www.facebook.com/oleg.laliev">Facebook</a>
+    </div>
+
+    <blockquote>
+      I am a developer who has a wide range of front end skills. The purpose being part of the epam team I really enjoy go through this challenge RS School. I always look to add my own magical touch to any new code that I write
+    </blockquote>
+
+    <h4 id="skills">Skills</h4>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>Node JS</li>
+    </ul>
+    <h4 id="code-example">Code Example</h4>
+    <div class="highlighter-rouge">
+      <div class="highlight">
+        <pre class="highlight">
+              <code>
+                    var http = require('http');
+                    var url = require('url');
+
+                    function start(route, handle) {
+                      function onRequest(request, response) {
+                        var pathname = url.parse(request.url).pathname;
+                        var postData = "";
+                        console.log("Request for " + pathname + " received.");
+
+                        request.setEncoding("utf8");
+                        request.addListener("data", function(postDataChunk) {
+                          postData += postDataChunk;
+                          console.log("Received POST data chunk'" + postDataChunk + "'.");
+                        });
+
+                        request.addListener("end", function() {
+                          route(handle, pathname, response, postData);
+                        });
+                      }
+
+                      http.createServer(onRequest).listen(8888);
+                      console.log("Server started");
+                    }
+
+                    exports.start = start;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <h3 id="job-experience">Job experience</h3>
+    <p>Period ~ From 2016 to 2019</p>
+    <p>Job Title ~ Front end developer.</p>
+    <p>Company: ~ I Software</p>
+    <hr>
+    <h3 id="education">Education</h3>
+    <p>BNTU: ~ 2007-2012 ___</p>
+    <h3 id="english-level">English level</h3>
+    <p>Upper intermediate</p>
+  </div>
+</body>
+</html>
